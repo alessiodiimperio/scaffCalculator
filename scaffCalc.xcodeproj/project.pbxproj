@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78D702A424016E4600443395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702A324016E4600443395 /* AppDelegate.swift */; };
+		78D702A624016E4600443395 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702A524016E4600443395 /* SceneDelegate.swift */; };
+		78D702A824016E4600443395 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702A724016E4600443395 /* ViewController.swift */; };
+		78D702AB24016E4600443395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D702A924016E4600443395 /* Main.storyboard */; };
+		78D702AD24016E4A00443395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D702AC24016E4A00443395 /* Assets.xcassets */; };
+		78D702B024016E4A00443395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D702AE24016E4A00443395 /* LaunchScreen.storyboard */; };
+		78D702BB24016E4A00443395 /* scaffCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702BA24016E4A00443395 /* scaffCalcTests.swift */; };
+		78D702C624016E4A00443395 /* scaffCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702C524016E4A00443395 /* scaffCalcUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78D702B724016E4A00443395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78D7029824016E4500443395 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78D7029F24016E4500443395;
+			remoteInfo = scaffCalc;
+		};
+		78D702C224016E4A00443395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78D7029824016E4500443395 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78D7029F24016E4500443395;
+			remoteInfo = scaffCalc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		78D702A024016E4500443395 /* scaffCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scaffCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D702A324016E4600443395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		78D702A524016E4600443395 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		78D702A724016E4600443395 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		78D702AA24016E4600443395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78D702AC24016E4A00443395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78D702AF24016E4A00443395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78D702B124016E4A00443395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78D702B624016E4A00443395 /* scaffCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scaffCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D702BA24016E4A00443395 /* scaffCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scaffCalcTests.swift; sourceTree = "<group>"; };
+		78D702BC24016E4A00443395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78D702C124016E4A00443395 /* scaffCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scaffCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D702C524016E4A00443395 /* scaffCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scaffCalcUITests.swift; sourceTree = "<group>"; };
+		78D702C724016E4A00443395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78D7029D24016E4500443395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D702B324016E4A00443395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D702BE24016E4A00443395 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78D7029724016E4500443395 = {
+			isa = PBXGroup;
+			children = (
+				78D702A224016E4500443395 /* scaffCalc */,
+				78D702B924016E4A00443395 /* scaffCalcTests */,
+				78D702C424016E4A00443395 /* scaffCalcUITests */,
+				78D702A124016E4500443395 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78D702A124016E4500443395 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78D702A024016E4500443395 /* scaffCalc.app */,
+				78D702B624016E4A00443395 /* scaffCalcTests.xctest */,
+				78D702C124016E4A00443395 /* scaffCalcUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78D702A224016E4500443395 /* scaffCalc */ = {
+			isa = PBXGroup;
+			children = (
+				78D702A324016E4600443395 /* AppDelegate.swift */,
+				78D702A524016E4600443395 /* SceneDelegate.swift */,
+				78D702A724016E4600443395 /* ViewController.swift */,
+				78D702A924016E4600443395 /* Main.storyboard */,
+				78D702AC24016E4A00443395 /* Assets.xcassets */,
+				78D702AE24016E4A00443395 /* LaunchScreen.storyboard */,
+				78D702B124016E4A00443395 /* Info.plist */,
+			);
+			path = scaffCalc;
+			sourceTree = "<group>";
+		};
+		78D702B924016E4A00443395 /* scaffCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				78D702BA24016E4A00443395 /* scaffCalcTests.swift */,
+				78D702BC24016E4A00443395 /* Info.plist */,
+			);
+			path = scaffCalcTests;
+			sourceTree = "<group>";
+		};
+		78D702C424016E4A00443395 /* scaffCalcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				78D702C524016E4A00443395 /* scaffCalcUITests.swift */,
+				78D702C724016E4A00443395 /* Info.plist */,
+			);
+			path = scaffCalcUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78D7029F24016E4500443395 /* scaffCalc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78D702CA24016E4A00443395 /* Build configuration list for PBXNativeTarget "scaffCalc" */;
+			buildPhases = (
+				78D7029C24016E4500443395 /* Sources */,
+				78D7029D24016E4500443395 /* Frameworks */,
+				78D7029E24016E4500443395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = scaffCalc;
+			productName = scaffCalc;
+			productReference = 78D702A024016E4500443395 /* scaffCalc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78D702B524016E4A00443395 /* scaffCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78D702CD24016E4A00443395 /* Build configuration list for PBXNativeTarget "scaffCalcTests" */;
+			buildPhases = (
+				78D702B224016E4A00443395 /* Sources */,
+				78D702B324016E4A00443395 /* Frameworks */,
+				78D702B424016E4A00443395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78D702B824016E4A00443395 /* PBXTargetDependency */,
+			);
+			name = scaffCalcTests;
+			productName = scaffCalcTests;
+			productReference = 78D702B624016E4A00443395 /* scaffCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		78D702C024016E4A00443395 /* scaffCalcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78D702D024016E4A00443395 /* Build configuration list for PBXNativeTarget "scaffCalcUITests" */;
+			buildPhases = (
+				78D702BD24016E4A00443395 /* Sources */,
+				78D702BE24016E4A00443395 /* Frameworks */,
+				78D702BF24016E4A00443395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78D702C324016E4A00443395 /* PBXTargetDependency */,
+			);
+			name = scaffCalcUITests;
+			productName = scaffCalcUITests;
+			productReference = 78D702C124016E4A00443395 /* scaffCalcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78D7029824016E4500443395 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Alessio;
+				TargetAttributes = {
+					78D7029F24016E4500443395 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					78D702B524016E4A00443395 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 78D7029F24016E4500443395;
+					};
+					78D702C024016E4A00443395 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 78D7029F24016E4500443395;
+					};
+				};
+			};
+			buildConfigurationList = 78D7029B24016E4500443395 /* Build configuration list for PBXProject "scaffCalc" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78D7029724016E4500443395;
+			productRefGroup = 78D702A124016E4500443395 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78D7029F24016E4500443395 /* scaffCalc */,
+				78D702B524016E4A00443395 /* scaffCalcTests */,
+				78D702C024016E4A00443395 /* scaffCalcUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78D7029E24016E4500443395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D702B024016E4A00443395 /* LaunchScreen.storyboard in Resources */,
+				78D702AD24016E4A00443395 /* Assets.xcassets in Resources */,
+				78D702AB24016E4600443395 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D702B424016E4A00443395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D702BF24016E4A00443395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78D7029C24016E4500443395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D702A824016E4600443395 /* ViewController.swift in Sources */,
+				78D702A424016E4600443395 /* AppDelegate.swift in Sources */,
+				78D702A624016E4600443395 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D702B224016E4A00443395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D702BB24016E4A00443395 /* scaffCalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78D702BD24016E4A00443395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78D702C624016E4A00443395 /* scaffCalcUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78D702B824016E4A00443395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78D7029F24016E4500443395 /* scaffCalc */;
+			targetProxy = 78D702B724016E4A00443395 /* PBXContainerItemProxy */;
+		};
+		78D702C324016E4A00443395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78D7029F24016E4500443395 /* scaffCalc */;
+			targetProxy = 78D702C224016E4A00443395 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		78D702A924016E4600443395 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78D702AA24016E4600443395 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78D702AE24016E4A00443395 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78D702AF24016E4A00443395 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78D702C824016E4A00443395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78D702C924016E4A00443395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78D702CB24016E4A00443395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = scaffCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diimperio.scaffCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78D702CC24016E4A00443395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = scaffCalc/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diimperio.scaffCalc;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		78D702CE24016E4A00443395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = scaffCalcTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diimperio.scaffCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/scaffCalc.app/scaffCalc";
+			};
+			name = Debug;
+		};
+		78D702CF24016E4A00443395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = scaffCalcTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diimperio.scaffCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/scaffCalc.app/scaffCalc";
+			};
+			name = Release;
+		};
+		78D702D124016E4A00443395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = scaffCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diimperio.scaffCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = scaffCalc;
+			};
+			name = Debug;
+		};
+		78D702D224016E4A00443395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = scaffCalcUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.diimperio.scaffCalcUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = scaffCalc;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78D7029B24016E4500443395 /* Build configuration list for PBXProject "scaffCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D702C824016E4A00443395 /* Debug */,
+				78D702C924016E4A00443395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78D702CA24016E4A00443395 /* Build configuration list for PBXNativeTarget "scaffCalc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D702CB24016E4A00443395 /* Debug */,
+				78D702CC24016E4A00443395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78D702CD24016E4A00443395 /* Build configuration list for PBXNativeTarget "scaffCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D702CE24016E4A00443395 /* Debug */,
+				78D702CF24016E4A00443395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78D702D024016E4A00443395 /* Build configuration list for PBXNativeTarget "scaffCalcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78D702D124016E4A00443395 /* Debug */,
+				78D702D224016E4A00443395 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78D7029824016E4500443395 /* Project object */;
+}

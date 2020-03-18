@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		787529F8241A518400479528 /* ScaffPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787529F7241A518400479528 /* ScaffPart.swift */; };
+		787529FA241A5A3900479528 /* ItemCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787529F9241A5A3900479528 /* ItemCellTableViewCell.swift */; };
+		787529FE241A6C5800479528 /* calcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787529FD241A6C5800479528 /* calcViewController.swift */; };
+		78752A0024211CA000479528 /* ScaffCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787529FF24211C9F00479528 /* ScaffCollectionViewCell.swift */; };
 		78D702A424016E4600443395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702A324016E4600443395 /* AppDelegate.swift */; };
 		78D702A624016E4600443395 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702A524016E4600443395 /* SceneDelegate.swift */; };
-		78D702A824016E4600443395 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702A724016E4600443395 /* ViewController.swift */; };
+		78D702A824016E4600443395 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702A724016E4600443395 /* ResultsViewController.swift */; };
 		78D702AB24016E4600443395 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D702A924016E4600443395 /* Main.storyboard */; };
 		78D702AD24016E4A00443395 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78D702AC24016E4A00443395 /* Assets.xcassets */; };
 		78D702B024016E4A00443395 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78D702AE24016E4A00443395 /* LaunchScreen.storyboard */; };
 		78D702BB24016E4A00443395 /* scaffCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702BA24016E4A00443395 /* scaffCalcTests.swift */; };
 		78D702C624016E4A00443395 /* scaffCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702C524016E4A00443395 /* scaffCalcUITests.swift */; };
+		78D702D42401AD8700443395 /* ScaffoldingCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702D32401AD8700443395 /* ScaffoldingCalc.swift */; };
+		78D702D62401BCFB00443395 /* ScaffModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702D52401BCFB00443395 /* ScaffModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		787529F7241A518400479528 /* ScaffPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaffPart.swift; sourceTree = "<group>"; };
+		787529F9241A5A3900479528 /* ItemCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellTableViewCell.swift; sourceTree = "<group>"; };
+		787529FD241A6C5800479528 /* calcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calcViewController.swift; sourceTree = "<group>"; };
+		787529FF24211C9F00479528 /* ScaffCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaffCollectionViewCell.swift; sourceTree = "<group>"; };
 		78D702A024016E4500443395 /* scaffCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scaffCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D702A324016E4600443395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78D702A524016E4600443395 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		78D702A724016E4600443395 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		78D702A724016E4600443395 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		78D702AA24016E4600443395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		78D702AC24016E4A00443395 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78D702AF24016E4A00443395 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		78D702C124016E4A00443395 /* scaffCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scaffCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D702C524016E4A00443395 /* scaffCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scaffCalcUITests.swift; sourceTree = "<group>"; };
 		78D702C724016E4A00443395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78D702D32401AD8700443395 /* ScaffoldingCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaffoldingCalc.swift; sourceTree = "<group>"; };
+		78D702D52401BCFB00443395 /* ScaffModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaffModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +113,14 @@
 			children = (
 				78D702A324016E4600443395 /* AppDelegate.swift */,
 				78D702A524016E4600443395 /* SceneDelegate.swift */,
-				78D702A724016E4600443395 /* ViewController.swift */,
+				78D702A724016E4600443395 /* ResultsViewController.swift */,
+				787529F9241A5A3900479528 /* ItemCellTableViewCell.swift */,
+				787529FF24211C9F00479528 /* ScaffCollectionViewCell.swift */,
+				78D702D32401AD8700443395 /* ScaffoldingCalc.swift */,
+				78D702D52401BCFB00443395 /* ScaffModel.swift */,
+				787529F7241A518400479528 /* ScaffPart.swift */,
 				78D702A924016E4600443395 /* Main.storyboard */,
+				787529FD241A6C5800479528 /* calcViewController.swift */,
 				78D702AC24016E4A00443395 /* Assets.xcassets */,
 				78D702AE24016E4A00443395 /* LaunchScreen.storyboard */,
 				78D702B124016E4A00443395 /* Info.plist */,
@@ -259,9 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78D702A824016E4600443395 /* ViewController.swift in Sources */,
+				787529F8241A518400479528 /* ScaffPart.swift in Sources */,
+				78D702A824016E4600443395 /* ResultsViewController.swift in Sources */,
+				78752A0024211CA000479528 /* ScaffCollectionViewCell.swift in Sources */,
+				78D702D62401BCFB00443395 /* ScaffModel.swift in Sources */,
 				78D702A424016E4600443395 /* AppDelegate.swift in Sources */,
 				78D702A624016E4600443395 /* SceneDelegate.swift in Sources */,
+				787529FE241A6C5800479528 /* calcViewController.swift in Sources */,
+				78D702D42401AD8700443395 /* ScaffoldingCalc.swift in Sources */,
+				787529FA241A5A3900479528 /* ItemCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 894YU8MPRY;
 				INFOPLIST_FILE = scaffCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +477,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 894YU8MPRY;
 				INFOPLIST_FILE = scaffCalc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

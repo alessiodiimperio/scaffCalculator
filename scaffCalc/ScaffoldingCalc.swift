@@ -18,13 +18,13 @@ class ScaffoldingCalc {
     var hasLadders:Bool
     var isFarFromWall:Bool
     
-    //variables - To make code more readable
+    //'Magic Number' variables - To make code more readable and editable
     let sectionHeight = 2
     let sectionWidth = 3.07
     let guardRailHeight = 1
-    let spiror1m = 1
-    let spiror2m = 2
-    let spiror3m = 3
+    let oneMeter = 1
+    let twoMeters = 2
+    let threeMeters = 3
     let topLevel = 1
     let bottomLevel = 1
     let topAndBottomLevel = 2
@@ -57,28 +57,28 @@ class ScaffoldingCalc {
         return getNumberOfSections() + 1 // plus one for outer pair
     }
     func get3mSpirorForHeight() -> Int {
-        return Int((topLevelPlatformHeight + guardRailHeight) / spiror3m)
+        return Int((topLevelPlatformHeight + guardRailHeight) / threeMeters)
     }
     func get2mSpirorForHeight() -> Int {
-        let alreadyCalculatedHeight = get3mSpirorForHeight() * spiror3m
+        let alreadyCalculatedHeight = get3mSpirorForHeight() * threeMeters
         
-        return Int(((topLevelPlatformHeight + guardRailHeight) - alreadyCalculatedHeight) / spiror2m)
+        return Int(((topLevelPlatformHeight + guardRailHeight) - alreadyCalculatedHeight) / twoMeters)
     }
     func get1mSpirorForHeight() -> Int {
 
-        let alreadyCalculatedHeight = (get3mSpirorForHeight() * spiror3m) + (get2mSpirorForHeight() * spiror2m)
+        let alreadyCalculatedHeight = (get3mSpirorForHeight() * threeMeters) + (get2mSpirorForHeight() * twoMeters)
                
         return Int(((topLevelPlatformHeight + guardRailHeight) - alreadyCalculatedHeight))
     }
     func getSpiror3mWithoutGuardrail() -> Int {
-        return Int(topLevelPlatformHeight / spiror3m)
+        return Int(topLevelPlatformHeight / threeMeters)
     }
     func getSpiror2mWithoutGuardrail() -> Int {
-        let alreadyCalculatedHeight = getSpiror3mWithoutGuardrail() * spiror3m
-        return Int((topLevelPlatformHeight - alreadyCalculatedHeight) / spiror2m)
+        let alreadyCalculatedHeight = getSpiror3mWithoutGuardrail() * threeMeters
+        return Int((topLevelPlatformHeight - alreadyCalculatedHeight) / twoMeters)
     }
     func getSpiror1mWithoutGuardrail() -> Int {
-        let alreadyCalculatedHeight = (getSpiror3mWithoutGuardrail() * spiror3m) + (getSpiror2mWithoutGuardrail() * spiror2m)
+        let alreadyCalculatedHeight = (getSpiror3mWithoutGuardrail() * threeMeters) + (getSpiror2mWithoutGuardrail() * twoMeters)
         
         return Int(topLevelPlatformHeight - alreadyCalculatedHeight)
     }

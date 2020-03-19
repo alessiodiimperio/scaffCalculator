@@ -17,7 +17,7 @@ class calcViewController: UIViewController {
     
     let options =
         [
-    [2,3,4,5,6,7,8,9,10,11,12],
+    [2,3,4,5,6,7,8,9,10],
     [3.07,6.14,9.21,12.28,15.35,18.42,21.49,24.56, 27.63, 30.70]
         ]
     var selectedHeight:Double = 2.0

@@ -25,8 +25,8 @@ class ScaffModel {
     var ubalk:ScaffPart // 7 part
     var langbalk:ScaffPart // 8 part
     var diagonaler:ScaffPart // 9 part
-    var ankare:ScaffPart // 10 part
-    var stalplank:ScaffPart // 11 part
+    var anchors:ScaffPart // 10 part
+    var platforms:ScaffPart // 11 part
     var toeboard:ScaffPart // 12 part
     var endToeboard:ScaffPart // 13 part
     var stairs:ScaffPart // 14 part
@@ -42,7 +42,7 @@ class ScaffModel {
     var levels:Int
     var levelsWithPlatforms:Int
     var topLevel:Int
-    var drawDivide:Bool
+    var hasDivide:Bool
     var hasStairs:Bool
     var hasLadders:Bool
     var middleSection:Int
@@ -62,8 +62,8 @@ class ScaffModel {
         ubalk = ScaffPart(title: "U-balk / U-Tvärbom", image: "ubalk", qty: 0)
         langbalk = ScaffPart(title: "Långbalk / Horisontalbalk", image: "langbalk", qty: 0)
         diagonaler = ScaffPart(title: "Diagonalstag", image: "diagonal", qty: 0)
-        ankare = ScaffPart(title: "Väggfästen", image: "ankare", qty: 0)
-        stalplank = ScaffPart(title: "Stålplank", image: "stalplank", qty: 0)
+        anchors = ScaffPart(title: "Väggfästen", image: "ankare", qty: 0)
+        platforms = ScaffPart(title: "Stålplank", image: "stalplank", qty: 0)
         toeboard = ScaffPart(title: "Sparklister", image: "sparklist", qty: 0)
         endToeboard = ScaffPart(title: "Ändsparklister", image: "andsparklist", qty: 0)
         toeboardKonsol = ScaffPart(title: "Sparklist Konsol", image: "sparklistkonsol", qty: 0)
@@ -74,14 +74,14 @@ class ScaffModel {
         longbeam2m = ScaffPart(title: "Långbalk 2m för skyddsräcke vid trapptorn på översta bomlag", image: "langbalk", qty: 0)
         
         //Array of scaffolding parts. Containing, image-name, qty and title
-        scaffItems = [bottenskruv, startkrans, spiror1m, spiror2m, spiror3m, kortbalk, ubalk, langbalk, diagonaler, ankare, stalplank, toeboard, endToeboard, stairs, stairGuardRail, spirstart, longbeam2m, ladders, toeboardKonsol]
+        scaffItems = [bottenskruv, startkrans, spiror1m, spiror2m, spiror3m, kortbalk, ubalk, langbalk, diagonaler, anchors, platforms, toeboard, endToeboard, stairs, stairGuardRail, spirstart, longbeam2m, ladders, toeboardKonsol]
         
         //Scaffolding variable initialization
         sections = 0
         levels = 0
         levelsWithPlatforms = 0
         topLevel = 0
-        drawDivide = false
+        hasDivide = false
         hasStairs = false
         hasLadders = false
         middleSection = 0
@@ -103,8 +103,8 @@ class ScaffModel {
         ubalk.qty = scaff.calcUBalk()
         langbalk.qty = scaff.calcTotalLongbalk()
         diagonaler.qty = scaff.calcTotalDiagonals()
-        ankare.qty = scaff.calcTotalAnkers()
-        stalplank.qty = scaff.calcTotalPlatforms()
+        anchors.qty = scaff.calcTotalAnkers()
+        platforms.qty = scaff.calcTotalPlatforms()
         toeboard.qty = scaff.calcTotalToeboards()
         endToeboard.qty = scaff.calcTotalEndToeboards()
         toeboardKonsol.qty = scaff.calcToeboardKonsol()
@@ -124,13 +124,9 @@ class ScaffModel {
         hasLadders = scaff.hasLadders
         
         if sections > 6 {
-            drawDivide = true
+            hasDivide = true
         } else {
-            drawDivide = false
-        }
-        middleSection = Int(Double(scaff.getNumberOfSections() / 2) + 1)
-        if middleSection > 4 {
-            middleSection = 99
+            hasDivide = false
         }
         sectionsToDraw = scaff.getNumberOfSections()
         if sectionsToDraw > 6 {

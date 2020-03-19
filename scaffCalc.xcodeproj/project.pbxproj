@@ -10,7 +10,6 @@
 		787529F8241A518400479528 /* ScaffPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787529F7241A518400479528 /* ScaffPart.swift */; };
 		787529FA241A5A3900479528 /* ItemCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787529F9241A5A3900479528 /* ItemCellTableViewCell.swift */; };
 		787529FE241A6C5800479528 /* calcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787529FD241A6C5800479528 /* calcViewController.swift */; };
-		78752A0024211CA000479528 /* ScaffCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787529FF24211C9F00479528 /* ScaffCollectionViewCell.swift */; };
 		78D702A424016E4600443395 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702A324016E4600443395 /* AppDelegate.swift */; };
 		78D702A624016E4600443395 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702A524016E4600443395 /* SceneDelegate.swift */; };
 		78D702A824016E4600443395 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702A724016E4600443395 /* ResultsViewController.swift */; };
@@ -44,7 +43,6 @@
 		787529F7241A518400479528 /* ScaffPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaffPart.swift; sourceTree = "<group>"; };
 		787529F9241A5A3900479528 /* ItemCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellTableViewCell.swift; sourceTree = "<group>"; };
 		787529FD241A6C5800479528 /* calcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calcViewController.swift; sourceTree = "<group>"; };
-		787529FF24211C9F00479528 /* ScaffCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaffCollectionViewCell.swift; sourceTree = "<group>"; };
 		78D702A024016E4500443395 /* scaffCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scaffCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D702A324016E4600443395 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78D702A524016E4600443395 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 				78D702A524016E4600443395 /* SceneDelegate.swift */,
 				78D702A724016E4600443395 /* ResultsViewController.swift */,
 				787529F9241A5A3900479528 /* ItemCellTableViewCell.swift */,
-				787529FF24211C9F00479528 /* ScaffCollectionViewCell.swift */,
 				78D702D32401AD8700443395 /* ScaffoldingCalc.swift */,
 				78D702D52401BCFB00443395 /* ScaffModel.swift */,
 				787529F7241A518400479528 /* ScaffPart.swift */,
@@ -279,7 +276,6 @@
 			files = (
 				787529F8241A518400479528 /* ScaffPart.swift in Sources */,
 				78D702A824016E4600443395 /* ResultsViewController.swift in Sources */,
-				78752A0024211CA000479528 /* ScaffCollectionViewCell.swift in Sources */,
 				78D702D62401BCFB00443395 /* ScaffModel.swift in Sources */,
 				78D702A424016E4600443395 /* AppDelegate.swift in Sources */,
 				78D702A624016E4600443395 /* SceneDelegate.swift in Sources */,

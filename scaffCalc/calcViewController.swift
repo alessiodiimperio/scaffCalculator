@@ -13,6 +13,7 @@ class calcViewController: UIViewController {
     @IBOutlet weak var scaffDisplayOutlet: UIImageView!
     @IBOutlet weak var hasStairs: UISwitch!
     @IBOutlet weak var hasLadders: UISwitch!
+    @IBOutlet weak var isFarFromWall: UISwitch!
     @IBOutlet weak var pickerView: UIPickerView!
     
     let options =
@@ -40,6 +41,7 @@ class calcViewController: UIViewController {
             destintionVC.scaff.scaff.topLevelPlatformHeight = Int(selectedHeight)
             destintionVC.scaff.scaff.hasStairs = hasStairs.isOn
             destintionVC.scaff.scaff.hasLadders = hasLadders.isOn
+            destintionVC.scaff.scaff.isFarFromWall = isFarFromWall.isOn
             destintionVC.scaff.reloadAll()
         }
     }
@@ -63,11 +65,9 @@ extension calcViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if component == 0 {
             selectedHeight = options[component][row]
-            print(selectedHeight)
         }
         if component == 1 {
             selectedWidth = options[component][row]
-            print(selectedWidth)
         }
     }
     func setupPickerViewHeaders(){
@@ -80,6 +80,7 @@ extension calcViewController: UIPickerViewDelegate, UIPickerViewDataSource {
                 UILabel(frame: CGRect(x: pickerView.frame.origin.x + labelWidth * CGFloat(index), y: 0, width: labelWidth, height: 40))
             label.text = optionHeaders[index]
             label.textAlignment = .center
+            label.backgroundColor = .white
             pickerView.addSubview(label)
         }
     }

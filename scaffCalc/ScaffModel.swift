@@ -5,6 +5,7 @@
 //  Created by Alessio on 2020-02-22.
 //  Copyright © 2020 Alessio. All rights reserved.
 //
+// 
 
 import UIKit
 
@@ -99,9 +100,9 @@ class ScaffModel {
         spiror3m.qty = scaff.calcTotal3mSpiror()
         startkrans.qty = scaff.calcTotalStartkrans()
         bottenskruv.qty = scaff.calcTotalBottenskruv()
-        kortbalk.qty = scaff.calcTotalKortbalk()
+        kortbalk.qty = scaff.calcTotalShortbeam()
         ubalk.qty = scaff.calcUBalk()
-        langbalk.qty = scaff.calcTotalLongbalk()
+        langbalk.qty = scaff.calcTotalLongbeam()
         diagonaler.qty = scaff.calcTotalDiagonals()
         anchors.qty = scaff.calcTotalAnkers()
         platforms.qty = scaff.calcTotalPlatforms()

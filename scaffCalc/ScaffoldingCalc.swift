@@ -5,9 +5,17 @@
 //  Created by Alessio on 2020-02-22.
 //  Copyright © 2020 Alessio. All rights reserved.
 //
+/**
+ This code has been sort of ported to swift from a JavaScript calculator belonging to AluStep. The code has been almost entirely rewritten  and improved with more detailed calculations and the ability to include toeboards, stairs, ladders including edited images to display them.
+ I have been given permission to use the images but want to clarify that any copyrighted material belongs solely to the copyright holders and no infringement is intended.
+ Images of the scaffolding icons are from Assco Futuro and they are the sole copyright holders of these images.
+
+ If you want to contact me regarding any unintended copyright issues feel free to contact me at alessio.diimperio @ gmail.com
+ 
+ **/
 
 import UIKit
-import Darwin
+//import Darwin
 
 class ScaffoldingCalc {
     
@@ -168,7 +176,7 @@ class ScaffoldingCalc {
             return getNumberOfSpirPar() * 2
         }
     }
-    func calcTotalKortbalk() -> Int {
+    func calcTotalShortbeam() -> Int {
         let shortbeamForScaffold = getTotalShortbeam()
         let shortbeamForStairCase = getShortbeamPerSection() * 2
         let shortbeamForPlatformLvls = totalLevelsWithPlatforms * 4
@@ -206,7 +214,7 @@ class ScaffoldingCalc {
             return ubalkForPlatforms
         }
     }
-    func calcTotalLongbalk()->Int{
+    func calcTotalLongbeam()->Int{
         let longbeamForScaffold = getLongbeams()
         let longbeamForStairCase = getLongbeamPerSection()
         let longbeamForPlatformGuardRail = totalLevelsWithPlatforms * getNumberOfSections() * 2

@@ -70,7 +70,7 @@ class ResultsViewController: UIViewController {
                 stack.widthAnchor.constraint(equalTo: stack.heightAnchor, multiplier: imageWidth/(levels * imageHeight)).isActive = true
             } else {
                 print("fixed width")
-                stack.widthAnchor.constraint(equalToConstant: (scaffContainer.bounds.size.width / 7)).isActive = true
+                stack.widthAnchor.constraint(equalToConstant: (scaffContainer.bounds.size.width / (sections + 1))).isActive = true
                 stack.heightAnchor.constraint(equalTo: stack.widthAnchor, multiplier: (levels * imageHeight) / imageWidth).isActive = true
             }
             
@@ -93,7 +93,6 @@ class ResultsViewController: UIViewController {
             let stack2 = scaffContainer.viewWithTag(2)!
             
             stack1.trailingAnchor.constraint(equalTo: scaffContainer.centerXAnchor).isActive = true
-            
             stack2.leadingAnchor.constraint(equalTo: stack1.trailingAnchor).isActive = true
 
         case 3:
@@ -103,9 +102,7 @@ class ResultsViewController: UIViewController {
             
             
             stack1.trailingAnchor.constraint(equalTo: stack2.leadingAnchor).isActive = true
-            
             stack2.centerXAnchor.constraint(equalTo: scaffContainer.centerXAnchor).isActive = true
-            
             stack3.leadingAnchor.constraint(equalTo: stack2.trailingAnchor).isActive = true
            
         case 4:
@@ -115,13 +112,9 @@ class ResultsViewController: UIViewController {
             let stack4 = scaffContainer.viewWithTag(4)!
             
             stack1.trailingAnchor.constraint(equalTo: stack2.leadingAnchor).isActive = true
-            
             stack2.trailingAnchor.constraint(equalTo: scaffContainer.centerXAnchor).isActive = true
-            
             stack3.leadingAnchor.constraint(equalTo: stack2.trailingAnchor).isActive = true
-            
             stack4.leadingAnchor.constraint(equalTo: stack3.trailingAnchor).isActive = true
-           
             
         case 5:
             let stack1 = scaffContainer.viewWithTag(1)!
@@ -131,13 +124,9 @@ class ResultsViewController: UIViewController {
             let stack5 = scaffContainer.viewWithTag(5)!
             
             stack1.trailingAnchor.constraint(equalTo: stack2.leadingAnchor).isActive = true
-            
             stack2.trailingAnchor.constraint(equalTo: stack3.leadingAnchor).isActive = true
-                       
             stack3.centerXAnchor.constraint(equalTo: scaffContainer.centerXAnchor).isActive = true
-            
             stack4.leadingAnchor.constraint(equalTo: stack3.trailingAnchor).isActive = true
-            
             stack5.leadingAnchor.constraint(equalTo: stack4.trailingAnchor).isActive = true
         
         case 6:
@@ -149,15 +138,10 @@ class ResultsViewController: UIViewController {
             let stack6 = scaffContainer.viewWithTag(6)!
             
             stack1.trailingAnchor.constraint(equalTo: stack2.leadingAnchor).isActive = true
-                       
             stack2.trailingAnchor.constraint(equalTo: stack3.leadingAnchor).isActive = true
-                                  
             stack3.trailingAnchor.constraint(equalTo: scaffContainer.centerXAnchor).isActive = true
-                       
             stack4.leadingAnchor.constraint(equalTo: stack3.trailingAnchor).isActive = true
-                       
             stack5.leadingAnchor.constraint(equalTo: stack4.trailingAnchor).isActive = true
-            
             stack6.leadingAnchor.constraint(equalTo: stack5.trailingAnchor).isActive = true
             
         default:
@@ -166,39 +150,45 @@ class ResultsViewController: UIViewController {
     }
     
     func createImage(level:Int, section:Int, hasStairs:Bool, hasLadders:Bool, hasDivide:Bool) -> UIImageView {
+        let bottomLevel = 1
         let topLevel = scaff.levels
+        let firstSection = 1
+        let lastSection = scaff.sectionsToDraw
+        let sectionToDrawDivide = 4
+//        let levelsWithPlatforms = scaff.levelsWithPlatforms
         
         var imageString = "scaff"
-        if level == 1 {
+        if level == bottomLevel {
             imageString += "_base"
-        } else if level == scaff.levels {
+        } else if level == topLevel {
             imageString += "_top"
         } else {
             imageString += "_middle"
         }
         
-        if hasStairs && section == 1 {
+        if hasStairs && section == firstSection {
                 imageString += "_hasStairs"
         }
         if hasLadders && section == scaff.sectionsToDraw {
             imageString += "_hasLadders"
         }
-        if (section == 1 || section == scaff.sectionsToDraw) && level != scaff.levels {
+        if (section == firstSection || section == lastSection) && level != topLevel {
             imageString += "_hasDiagonals"
         }
-        if level == topLevel - 1 && !(hasLadders || hasStairs){
+        if ((hasStairs && section == firstSection && level != topLevel) || (hasLadders && section == lastSection && level != topLevel)) || (level == topLevel - 1 && level != topLevel) {
             imageString += "_hasPlatform"
         }
-        if section == 4 && hasDivide {
+        if section == sectionToDrawDivide && hasDivide {
             imageString += "_hasDivide"
         }
         
-        if level == 1 {
+        if level == bottomLevel {
             let image = UIImageView(image: UIImage(named: imageString))
             image.contentMode = .scaleAspectFit
 
             return image
-        } else if level == scaff.levels {
+            
+        } else if level == topLevel {
             let image = UIImageView(image: UIImage(named: imageString))
             image.contentMode = .scaleAspectFit
 

@@ -18,7 +18,7 @@ import UIKit
 //import Darwin
 
 class ScaffoldingCalc {
-    
+        
     var topLevelPlatformHeight:Int
     var totalLength:Double
     var totalLevelsWithPlatforms:Int

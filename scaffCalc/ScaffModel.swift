@@ -61,7 +61,7 @@ class ScaffModel {
         bottenskruv = ScaffPart(title: "Bottenskruv", image: "bottenskruv", qty: 0)
         kortbalk = ScaffPart(title: "Kortbalk / Tvärbom", image: "kortbalk", qty: 0)
         ubalk = ScaffPart(title: "U-balk / U-Tvärbom", image: "ubalk", qty: 0)
-        langbalk = ScaffPart(title: "Långbalk / Horisontalbalk", image: "langbalk", qty: 0)
+        langbalk = ScaffPart(title: "Långbalk / Horisontalstag", image: "langbalk", qty: 0)
         diagonaler = ScaffPart(title: "Diagonalstag", image: "diagonal", qty: 0)
         anchors = ScaffPart(title: "Väggfästen", image: "ankare", qty: 0)
         platforms = ScaffPart(title: "Stålplank", image: "stalplank", qty: 0)
@@ -136,9 +136,9 @@ class ScaffModel {
         
         //Append items to tableview but filter out items with 0 qty - DISABLED for debugging
         for item in scaffItems {
-//            if item.qty > 0 {
+            if item.qty > 0 {
                 scaffParts.append(item)
-//            }
+            }
         }
     }
 }

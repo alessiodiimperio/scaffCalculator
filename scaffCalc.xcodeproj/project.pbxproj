@@ -20,6 +20,7 @@
 		78D702C624016E4A00443395 /* scaffCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702C524016E4A00443395 /* scaffCalcUITests.swift */; };
 		78D702D42401AD8700443395 /* ScaffoldingCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702D32401AD8700443395 /* ScaffoldingCalc.swift */; };
 		78D702D62401BCFB00443395 /* ScaffModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D702D52401BCFB00443395 /* ScaffModel.swift */; };
+		78E969BA2437466E00FBC8EF /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E969B92437466E00FBC8EF /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		78D702C724016E4A00443395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78D702D32401AD8700443395 /* ScaffoldingCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaffoldingCalc.swift; sourceTree = "<group>"; };
 		78D702D52401BCFB00443395 /* ScaffModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaffModel.swift; sourceTree = "<group>"; };
+		78E969B92437466E00FBC8EF /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				78D702D52401BCFB00443395 /* ScaffModel.swift */,
 				787529F7241A518400479528 /* ScaffPart.swift */,
 				78D702A924016E4600443395 /* Main.storyboard */,
+				78E969B92437466E00FBC8EF /* InfoViewController.swift */,
 				787529FD241A6C5800479528 /* calcViewController.swift */,
 				78D702AC24016E4A00443395 /* Assets.xcassets */,
 				78D702AE24016E4A00443395 /* LaunchScreen.storyboard */,
@@ -278,6 +281,7 @@
 				78D702A824016E4600443395 /* ResultsViewController.swift in Sources */,
 				78D702D62401BCFB00443395 /* ScaffModel.swift in Sources */,
 				78D702A424016E4600443395 /* AppDelegate.swift in Sources */,
+				78E969BA2437466E00FBC8EF /* InfoViewController.swift in Sources */,
 				78D702A624016E4600443395 /* SceneDelegate.swift in Sources */,
 				787529FE241A6C5800479528 /* calcViewController.swift in Sources */,
 				78D702D42401AD8700443395 /* ScaffoldingCalc.swift in Sources */,
